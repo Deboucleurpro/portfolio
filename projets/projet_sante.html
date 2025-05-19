@@ -10,17 +10,19 @@
   <form onsubmit="return login();">
     <label for="user">Nom d'utilisateur :</label>
     <input type="text" id="user" required><br><br>
+
     <label for="pass">Mot de passe :</label>
     <input type="password" id="pass" required><br><br>
+
     <button type="submit">Se connecter</button>
   </form>
 
   <script>
     function login() {
-      alert(\"Connexion simulée réussie. Projet chargé !\");
-      return false; // empêche le rechargement
+      alert("Connexion simulée réussie !");
+      window.location.href = "projet_sante_quiz.html";
+      return false;
     }
   </script>
 </body>
-  <form onsubmit="window.location.href='projet_sante_quiz.html'; return false;">
 </html>
